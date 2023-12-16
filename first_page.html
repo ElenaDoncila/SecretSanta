@@ -3,7 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password-Protected Page 1</title>
+    <title>Password Protected Hint 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        #poem-container {
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f8f8f8;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,7 +39,24 @@
 <body>
 
     <div id="login-container">
-        <h1>Password-Protected Page 1</h1>
+        <h1>First Hint!!!</h1>
+        <div id="poem-container">
+            <p>Gather 'round, it's time to play,<br>
+                A Christmas hunt in a festive array.<br>
+                For Adriana, a clue awaits unseen,<br>
+                Hidden with care, where green, round things convene.</p>
+            
+            <p>Adriana, the hunt's begin,<br>
+                Seek the clue, you won't be undone. <br>
+                In corners cozy or beneath the tree, <br>
+                Find the clue where mystery's key.</p>
+                
+            <p>The holiday magic, wrapped in green,<br>
+                Hints secret yet to be seen.<br>
+                Follow the riddle, enjoy the play,<br>
+                For your Secret Santa awaits the day!</p>
+            <!-- Add more lines of your poem as needed -->
+        </div>
         
         <label for="password">Enter Password:</label>
         <input type="password" id="password" placeholder="Password">
