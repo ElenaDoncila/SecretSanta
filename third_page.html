@@ -3,30 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password-Protected Page</title>
+    <title>Password Protected Hint 3</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: url('images/tim-mossholder-w0CHTDEpbpE-unsplash.jpg') no-repeat center center fixed; 
+            background-size: cover; 
         }
         #login-container {
+            max-width: 600px;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #240b42;
+            background-color: rgba(255, 173, 58, 0.6);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #checkpassword-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: rgba(238, 203, 128);
+            cursor: pointer;
+            background-color: rgba(57,3,3, 0.7); /* Set the background opacity */
+        }
+    </style>
+
+    <style>
+        #poem-container {
             max-width: 400px;
             margin: 0 auto;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
     <div id="login-container">
-        <h1>Password-Protected Page 3</h1>
+        <h1>Third Hint!!!</h1>
+        <div id="poem-container">
+            <p>Adriana, your journey's heat unfolds,<br>
+                Where flames flicker, and warmth beholds.<br>
+                Seek the glow where embers gleam,<br>
+                A spot where dreams and mysteries team.</p>
+            
+            <p>From water's edge, let sparks ignite,<br>
+                Trace the warmth, your path is bright. <br>
+                Amidst the crackle, a secret awaits.<br>
+                Your next clue dances by sparks's gates.</p>
+        </div>
         
         <label for="password">Enter Password:</label>
         <input type="password" id="password" placeholder="Password">
-        <button onclick="checkPassword()">Submit</button>
+        <button id="checkpassword-button" onclick="checkPassword()">Submit</button>
 
-        <p id="error-message" style="color: red;"></p>
-
+        <p id="error-message" style="color: rgb(7, 4, 4);"></p>
     </div>
 
     <script>
