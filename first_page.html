@@ -22,8 +22,15 @@
             margin: 20px;
             padding: 20px;
             border: 2px solid #240b42;
-            background-color: rgba(255, 173, 58, 0.966);
+            background-color: rgba(255, 173, 58, 0.6);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #checkpassword-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: rgba(238, 203, 128);
+            cursor: pointer;
+            background-color: rgba(57,3,3, 0.7); /* Set the background opacity */
         }
     </style>
 
@@ -58,7 +65,7 @@
         
         <label for="password">Enter Password:</label>
         <input type="password" id="password" placeholder="Password">
-        <button onclick="checkPassword()">Submit</button>
+        <button id="checkpassword-button" onclick="checkPassword()">Submit</button>
 
         <p id="error-message" style="color: rgb(7, 4, 4);"></p>
     </div>
