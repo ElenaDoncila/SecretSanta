@@ -1,106 +1,40 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<title>Adriana's Secret Santa Scavenger Hunt</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-<body>
-
-<div class="w3-display-container" style="margin-bottom:50px">
-  <img src="https://github.com/ElenaDoncila/SecretSanta/blob/main/images/christmas-images.jpg?raw=true" style="width:100%">
-  <div class="w3-display-bottomleft w3-container w3-amber w3-hover-red w3-hide-small"
-   style="bottom:10%;opacity:0.5;width:100%">
-  <h2><b>Merry Christmas!!<br>Welcome to Adriana's Secret Santa Scavenger Hunt</b></h2>
-</div>
-</div>
-
-<div class="w3-row w3-container" style="margin:50px 0">
-<div class="w3-half w3-container">
-  <div class="w3-topbar w3-border-amber">
-    <img src="/w3images/cellphone.jpg" style="width:100%">
-    <h2>Smart Vacation</h2>
-    <p>Full vacation control from your cell phone.</p>
-  </div>
-</div>
-
-<div class="w3-half w3-container">
-  <div class="w3-topbar w3-border-amber">
-    <img src="/w3images/sealions.jpg" style="width:100%">
-    <h2>Super Offers</h2>
-    <p>Up to 50% offers. Always 25% student offers.</p>
-  </div>
-</div>
-</div>
-
-<div class="w3-row w3-container" style="margin:50px 0">
-<div class="w3-half w3-container">
-  <div class="w3-topbar w3-border-orange">
-    <img src="/w3images/truck.jpg" style="width:100%">
-    <h2>Car Rental Included</h2>
-    <p>Wherever you travel our car rental is included.</p>
-  </div>
-</div>
-
-<div class="w3-half w3-container">
-  <div class="w3-topbar w3-border-orange">
-    <img src="/w3images/nowornever.jpg" style="width:100%">
-    <h2>Realize Your Dreams</h2>
-    <p>Don't wait until it is to late.</p>
-    </div>
-</div>
-</div>
-
-</body>
-</html>
- -->
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password-Protected Page</title>
+    <title>Scavenger Hunt Introduction</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 20px;
         }
-        #login-container {
-            max-width: 400px;
+        #intro-container {
+            max-width: 600px;
             margin: 0 auto;
+        }
+        #start-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-    <div id="login-container">
-        <h1>Password-Protected Page</h1>
+    <div id="intro-container">
+        <h1>Welcome to the Scavenger Hunt!</h1>
         
-        <label for="password">Enter Password:</label>
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="checkPassword()">Submit</button>
+        <p>Get ready for an exciting scavenger hunt adventure! Explore the surroundings and find hidden treasures.</p>
 
-        <p id="error-message" style="color: red;"></p>
-
+        <button id="start-button" onclick="startScavengerHunt()">Yes, I'm Ready!</button>
     </div>
 
     <script>
-        function checkPassword() {
-            var passwordInput = document.getElementById("password").value;
-            var errorMessage = document.getElementById("error-message");
-
-            // Replace "your_password" with the actual password you want to use
-            var correctPassword = "your_password";
-
-            if (passwordInput === correctPassword) {
-                // Redirect to the next page or perform additional actions
-                window.location.href = "next_page.html";
-            } else {
-                errorMessage.textContent = "Incorrect password. Please try again.";
-            }
+        function startScavengerHunt() {
+            // Redirect to the next page or perform additional actions
+            window.location.href = "index.html";
         }
     </script>
 
