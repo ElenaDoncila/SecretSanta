@@ -14,25 +14,24 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            background: url('images/christmas-images.jpg') no-repeat center center fixed; 
+            background-size: cover; 
         }
-        #poem-container {
+        #login-container {
             max-width: 600px;
+            margin: 20px;
             padding: 20px;
             border: 1px solid #ccc;
-            background-color: #f8f8f8;
+            background-color: rgba(255, 255, 255, 0.8);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
-        #login-container {
+        #poem-container {
             max-width: 400px;
             margin: 0 auto;
+            text-align: left;
         }
     </style>
 </head>
@@ -55,7 +54,6 @@
                 Hints secret yet to be seen.<br>
                 Follow the riddle, enjoy the play,<br>
                 For your Secret Santa awaits the day!</p>
-            <!-- Add more lines of your poem as needed -->
         </div>
         
         <label for="password">Enter Password:</label>
@@ -63,7 +61,6 @@
         <button onclick="checkPassword()">Submit</button>
 
         <p id="error-message" style="color: red;"></p>
-
     </div>
 
     <script>
